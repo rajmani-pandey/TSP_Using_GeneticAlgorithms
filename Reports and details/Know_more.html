@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script language="javascript" type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js"></script>
+
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="know-more.css">
+
+    <title>TSP Solution Visualizer</title>
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="main-head">
+            <div class="left-head">
+                <a href="#" class="navbar-brand">TSP Solution Visualizer</a>
+
+            </div>
+            <div class="right-head">
+                <div class="right-link">
+                    <a href="/Travelling Sales person problem/Brute Force Solution/index.html"
+                        style="background-color: rgb(204, 231, 255);">Brute Force</a>
+                    <a href="/Travelling Sales person problem/Genetic Algorithm Solution/sketch.html"
+                        style="background-color: rgb(204, 231, 255);">Genetics Algorithm</a>
+                    <a href="/Reports and details/Know_more.html">Know more</a>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <section id="sec">
+        <H1><b>Report and Our Analysis</b></H3>
+            <br>
+
+            <div>
+                <h3> <b>What is Travelling Salesman Problem or TSP? </b> </h3>
+                <p>The Traveling Salesman Problem (TSP) is a classic problem in computer science and mathematics that
+                    seeks to find the shortest possible route a salesperson can take to visit a set of cities and return
+                    to the starting city, visiting each city exactly once. It is called the "traveling salesman" problem
+                    because it can be visualized as a salesperson trying to minimize the distance traveled while
+                    visiting multiple cities to sell their products.
+                    The problem is considered an NP-hard problem, which means that finding the optimal solution for
+                    large instances becomes computationally challenging as the number of cities increases.
+                    Mathematically, the TSP is represented as a complete weighted graph, where each city represents a
+                    node, and the distances between cities represent the weights on the edges. The goal is to find a
+                    Hamiltonian cycle, a path that visits each city once and returns to the starting city, with the
+                    minimum possible total distance.
+                </p>
+            </div>
+                <br>
+            <div>
+                <h3>
+                    <b>Scope and Real World Applications of TSP:</b> 
+                </h3>
+                <p>
+                    TSP is an NP hard problem in combinatorial optimization important in operations research and
+                    theoretical computer science. Travelling Salesman Problem (TSP) is always fascinating for the
+                    computational scientists and poses interesting challenges to formulate fast and effective algorithms
+                    for its solution. It is really challenging to design a robust and effective algorithm, which can
+                    give optimal solutions to TSP with large dimensions. There are many algorithms proposed in the
+                    literature based on various branches of mathematics, graph theory, operation research and even in
+                    fuzzy theory. The amount of computational time to solve this problem grows exponentially as the
+                    number of cities. These problems demand innovative solutions if they are to be solved within a
+                    reasonable amount of time. We are trying to explore the solution of the Travelling Salesman Problem
+                    using genetic algorithms. The aim of the project is to review how genetic algorithms are applied to
+                    this problem and find an efficient solution.
+                    <br>
+                    The TSP has many real-world applications, such as <strong> routing in logistics, transportation, network
+                    design, circuit board drilling, and DNA sequencing.</strong> It remains an active area of research in both
+                    theoretical computer science and applied mathematics.
+
+                </p>
+            </div>
+                    <br>
+            <div>
+                <h3><b>What is Genetics Algorithm?</b></h3>
+                <p>A genetic algorithm (GA) is a metaheuristic algorithm inspired by the process of natural selection
+                    and genetics. It is commonly used to solve optimization and search problems where traditional
+                    algorithms may be inefficient or impractical. Genetic algorithms are particularly useful for solving
+                    complex problems that involve a large search space.
+                    Genetic algorithms have been applied to a wide range of problems, including optimization,
+                    scheduling, data mining, machine learning, and engineering design. They provide a powerful and
+                    flexible approach for solving challenging optimization problems by leveraging principles from
+                    evolutionary biology.
+                </p>
+            </div>
+                <br>
+            <div>
+                <h3>
+                    <b>Comparison between Brute Force and Genetics Algortihm:</b>
+                </h3>
+            
+                <table>
+                    <tr id="t-heading">
+                        <th>Characterstics</th>
+                        <th>Brute Force</th>
+                        <th>Genetics Algortihm</th>
+                    </tr>
+
+                    <tr>
+                        <th>Approach</th>
+                        <th>The brute force method exhaustively checks all possible permutations of cities to find the optimal solution. It computes the total distance for each permutation and selects the one with the minimum distance.</th>
+                        <th>The genetic algorithm uses a population of candidate solutions and evolves them over generations through selection, crossover, and mutation operations to converge towards an optimal or near-optimal solution.</th>
+                    </tr>
+
+                    <tr>
+                        <th>Computational Complexity</th>
+                        <th>The brute force approach examines all possible permutations, resulting in a time complexity of O(n!), where n is the number of cities. As the number of cities increases, the computation time becomes exponentially larger and quickly becomes impractical for large instances.</th>
+                        <th>Genetic algorithms have a polynomial time complexity, typically O(g * p * n^2), where g is the number of generations, p is the population size, and n is the number of cities. While the genetic algorithm is also affected by the size of the problem, it can handle larger instances more efficiently compared to brute force.</th>
+                    </tr>
+
+                    <tr>
+                        <th>Solution Quality</th>
+                        <th>The brute force method guarantees an optimal solution as it systematically evaluates all possible permutations. However, due to its exponential time complexity, it becomes infeasible for large instances.</th>
+                        <th>Genetic algorithms are not guaranteed to find the optimal solution but provide good approximate solutions. The quality of the solution depends on various factors such as the population size, selection criteria, and genetic operators. The genetic algorithm can handle larger instances more efficiently, sacrificing optimality for computational feasibility.</th>
+                    </tr>
+
+                    <tr>
+                        <th>Search Space Exploration</th>
+                        <th>Brute force explores the entire search space systematically, leaving no area unexplored. This exhaustive search ensures that the optimal solution is found if the computation is feasible.</th>
+                        <th>Genetic algorithms explore the search space using a stochastic approach, guided by fitness evaluations and genetic operators. They have the advantage of exploring diverse regions of the search space and can potentially avoid getting trapped in local optima.</th>
+                    </tr>
+
+                    <tr>
+                        <th>Scalability</th>
+                        <th>Brute force quickly becomes computationally infeasible as the number of cities increases. The time required grows factorially with the number of cities, making it suitable only for small instances.</th>
+                        <th>Genetic algorithms can handle larger instances efficiently by leveraging population-based parallelism and heuristic search. They are more scalable and can provide reasonable solutions even for large-scale TSP instances.</th>
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+            <br>
+
+            <div>
+                <h3><b>Approach</b></h3>
+                <p>
+                    1. [Start] Generate a random population of n chromosomes (suitable solutions for the
+                    problem)
+                    <br>
+                    2. [Fitness] Evaluate the fitness f(x) of each chromosome x in the population.
+                    <br>
+                    3. [New population] Create a new population by repeating the following steps until the new
+                    population is complete.<br>
+                    4. [Selection] Select two parent chromosomes from a population according to their fitness
+                    (the better fitness, the bigger chance to be selected). <br>
+                    5. [Crossover] is performed with a probability known as crossover probability that crossover
+                    the selected parents to produce a new offspring (children). If crossover probability is 0%,
+                    children are an exact copy of the parents.<br>
+                    6. [Mutation] is performed with a probability known as mutation probability that mutates
+                    new offspring at each locus (position in chromosome).<br>
+                    7. [Accepting] Place new offspring in a new population. <br>
+                    . 8. [Replace] Use the newly generated population for running the algorithm. <br>
+                    9. [Test] If the termination condition is satisfied, then stop the algorithm, and return the best
+                    solution in the current population. <br>
+                    10. [Loop] Go to step 2.<br>
+
+                </p>
+                <img id="img" src="/Images/approach.png" alt="">
+            </div>
+
+    </section>
+
+   

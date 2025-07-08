@@ -1,0 +1,133 @@
+body {
+    background: #ffffff;
+    font-family: "Nunito", sans-serif;
+}
+
+.main-head{
+    height: 60px;
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding-bottom: 0px;
+   
+}
+.main-head a{
+    text-decoration: none;
+    
+}
+.right-head{
+    
+    margin-right: 30px;
+    display: flex;
+    justify-content:flex-end;
+    align-items:end ;
+    /* bottom: 0; */
+    padding-bottom: 0px;
+    margin-bottom: -1px;
+    
+
+}
+.right-link{
+    margin-bottom:0;
+}
+.right-link a{
+    color: #000000;
+   margin-bottom: 0px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.left-head{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.blurb h2 {
+   color: #EA1C2C;
+   font-weight: 100;
+   font-size: 2.5rem;
+}
+
+.blurb p {
+    color: #f498b8;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;    
+}
+
+#mainNavbar .nav-link {
+    color: maroon;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #EA1C2C;
+}
+
+#mainNavbar .navbar-brand {
+    color: #EA1C2C;
+    font-size: 1.5rem;
+}
+
+#headingGroup span {
+    color: #EA1C2C;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: rgb(222,192,222);
+    transition: background 500ms;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .blurb h2 {
+        font-size: 2rem;
+    }
+}
+.footer-box{
+    /* border: solid 1px white; */
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background-color: #212020;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.names{
+    margin: 10px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+.names a{
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}

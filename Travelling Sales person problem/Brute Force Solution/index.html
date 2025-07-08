@@ -1,0 +1,95 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js"></script>
+      
+      <script language="javascript" type="text/javascript" src="sketch.js"></script>
+      <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="brute-force.css">
+
+    <title>TSP Solution Visualizer</title>
+    </head>
+    
+    <body>
+<nav>
+    <div class="main-head">
+        <div class="left-head">
+            <a  class="navbar-brand">TSP Solution Visualizer</a>
+
+        </div>
+        <div class="right-head">
+            <div class="right-link">
+               <a href="/Travelling Sales person problem/Brute Force Solution/index.html">Brute Force</a> 
+                <a href="/Travelling Sales person problem/Genetic Algorithm Solution/sketch.html" style="background-color: rgb(204, 231, 255);">Genetics Algorithm</a>
+                <a href="/Reports and details/Know_more.html"  style="background-color: rgb(204, 231, 255);">Know more</a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+<section>
+    <div class = "container">
+        <div class="row">
+            <div class="col">
+              </div>
+              <div class="col" id="sketch-holder" style="margin:10px">
+                <h4 style="margin:10px">Enter the number of cities and click submit.</h4>
+              </div>
+              <div class="col">
+              </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              </div>
+              <div class="col input-group mb-3">
+                <span class="input-group-text">Enter number of cities</span>
+                <input type="number" min="0" class="form-control" aria-label="Number of cities positive only">
+                <button class="btn btn-primary" onclick="startloop()">Submit</button>
+            </div>
+              <div class="col">
+              </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer">
+        <div class="footer-box">
+            <div class="footer-head">
+                <h3>Team Members</h3>
+            </div>
+            <div class="names">
+                <a> Achyut Agarwal </a>
+                <a>Chirag Rajput</a>
+                <a>Garvit Goyal</a>
+                <a>Khushi Gadling</a>
+                <a>Siddharth Kelkar</a>
+            </div>
+        </div>
+        
+    </div>
+    
+</footer>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </body>
+    </html>
