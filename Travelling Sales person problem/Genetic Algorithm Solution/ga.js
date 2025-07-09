@@ -1,4 +1,5 @@
 function calculateFitness() {
+  //writing
     var currentRecord = Infinity;
     for (var i = 0; i < population.length; i++) {
       var d = calcDistance(cities, population[i]);
